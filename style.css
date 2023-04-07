@@ -1,0 +1,191 @@
+body, p, h1, h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  height: 100vh;
+  display: grid;
+  align-content: center;
+}
+
+.container {
+  width: 85vw;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.icon-profile img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.notifications-board {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875em;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.notifications-board h1 {
+  color: hsl(224, 21%, 14%)
+}
+
+.notifications-board .counter {
+  font-size: 0.675em;
+  background: hsl(219, 85%, 26%);
+  padding: 5px 12px;
+  color: white;
+  border-radius: 10px;
+}
+
+.notifications-board .markAll {
+  margin-top: 5px;
+  color: hsl(219, 14%, 63%);
+  cursor: pointer;
+}
+
+.notification {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-bottom: 30px;
+}
+
+.notification p {
+  display: inline-block;
+  font-size: 0.875em;
+  color: hsl(219, 14%, 63%);
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.icon-profile{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.topic {
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.topic:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.chess-img img {
+  width: 40px;
+  height: 40px;
+}
+
+.name {
+  font-weight: 800;
+  color: hsl(224, 21%, 14%);
+  cursor: pointer;
+}
+
+.name:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.date {
+  font-size: 0.875em;
+  color: hsl(219, 14%, 63%);
+  grid-column: 2;
+}
+
+.message {
+  padding: 10px;
+  margin-top: 65px;
+  border: 1px solid hsl(205, 33%, 90%);
+}
+
+.date.riz {
+  font-size: 0.875em;
+  color: hsl(219, 14%, 63%);
+  grid-row: 1;
+  grid-column: 2;
+  margin-top: 40px;
+}
+
+.date.gray, 
+.date.anna {
+  font-size: 0.875em;
+  color: hsl(219, 14%, 63%);
+  grid-row: 1;
+  grid-column: 2;
+  margin-top: 20px;
+}
+
+.chess-img {
+  grid-row: 1;
+  margin-left: 10px;
+}
+
+.topic-group {
+  font-weight: 800;
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+
+.redDot {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  display: none;
+  margin-left: 3px;
+}
+
+.redDot.active {
+  display: inline-block;
+}
+
+
+@media (min-width: 700px) {
+  .date.riz {
+    margin-top: 20px;
+  }
+  .date.gray {
+    margin-top: 20px;
+
+  }
+  .date.anna {
+    margin-top: 20px;
+
+  }
+  .date.kim,
+  .date.jacob,
+  .date.mark {
+    margin-top: -25px;
+  }
+  .date.nathan {
+    margin-top: -5px;
+  }
+  .notifications-board {
+    margin-top: 0px;
+  }
+}
+
+
+/*## Colors
+
+### Primary
+
+- Red: hsl(1, 90%, 64%)
+- Blue: hsl(219, 85%, 26%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Very light grayish blue: hsl(210, 60%, 98%)
+- Light grayish blue 1: hsl(211, 68%, 94%)
+- Light grayish blue 2: hsl(205, 33%, 90%)
+- Grayish blue: hsl(219, 14%, 63%)
+- Dark grayish blue: hsl(219, 12%, 42%)
+- Very dark blue: hsl(224, 21%, 14%)*/
